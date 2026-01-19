@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 WBC 東京應援之旅</title>
+    <style>
+        :root {
+            --primary-blue: #0035ad;
+            --primary-red: #e4002b;
+            --bg-gray: #f4f7f9;
+            --white: #ffffff;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-gray);
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-blue), #001f66);
+            color: white;
+            padding: 30px 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .day-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--primary-blue);
+        }
+        .day-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .day-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--primary-blue);
+        }
+        .match-tag {
+            background: var(--primary-red);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+        }
+        .schedule-item {
+            display: flex;
+            margin-bottom: 12px;
+        }
+        .time {
+            min-width: 65px;
+            font-weight: bold;
+            color: #666;
+        }
+        .event {
+            flex: 1;
+            line-height: 1.5;
+        }
+        .event b {
+            color: #000;
+        }
+        .highlight {
+            background-color: #fff9c4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+        .footer-note {
+            font-size: 0.9rem;
+            color: #777;
+            text-align: center;
+            margin-top: 30px;
+            line-height: 1.6;
+        }
+        .shopping-list {
+            background: #eef2ff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1 style="margin:0; font-size: 1.8rem;">⚾ 2026 WBC 東京應援</h1>
+        <p style="margin:10px 0 0; opacity: 0.9;">台灣隊加油！前進休士頓！</p>
+    </header>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title">3/4 (三) 抵達日</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">16:13</div>
+            <div class="event">台南高鐵發車 (17:38 抵達桃園)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">20:55</div>
+            <div class="event">樂桃航空起飛 ✈️</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">00:50</div>
+            <div class="event">抵達羽田機場，入住 <b>Villa Fontaine Grand</b></div>
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title">3/5 (四) 首戰澳洲</div>
+            <div class="match-tag">台 🆚 澳</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">09:00</div>
+            <div class="event"><b>包車出發</b> ➔ 蔵前寄放行李</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">09:40</div>
+            <div class="event highlight">蔵前早餐 (Pelican Coffee / Chigaya)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">11:00</div>
+            <div class="event">到達東京巨蛋 (安檢進場)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">12:00</div>
+            <div class="event"><b>WBC 比賽開始</b></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">16:00</div>
+            <div class="event"><b>晚餐時間</b></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">18:00</div>
+            <div class="event"><b>銀座購物：</b>Uniqlo、無印良品</div>
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title">3/6 (五) 台日大戰</div>
+            <div class="match-tag" style="background: #333;">台 🆚 日</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">白天</div>
+            <div class="event"><b>東京景點慢遊</b> (淺草/澀谷/明治神宮)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">16:30</div>
+            <div class="event highlight"><b>務必到達東京巨蛋</b> (滿場預警)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">19:00</div>
+            <div class="event"><b>WBC 比賽開始</b> (抗日大賽🔥)</div>
+        </div>
+    </div>
+
+    <div class="day-card" style="border-left-color: var(--primary-red);">
+        <div class="day-header">
+            <div class="day-title">3/7 (六) 採買日</div>
+            <div class="match-tag">台 🆚 捷</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">11:00</div>
+            <div class="event">到達東京巨蛋</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">12:00</div>
+            <div class="event"><b>WBC 比賽開始</b></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">16:00</div>
+            <div class="event"><b>晚餐時間</b></div>
+        </div>
+        <div class="shopping-list">
+            <b>🛍️ 購物清單：</b><br>
+            • 銀座三越/松屋 (Dior, YSL)<br>
+            • 大創旗艦店、3COINS<br>
+            • 21:30 唐吉訶德 (銀座本店)
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title">3/8 (日) 最終決戰</div>
+            <div class="match-tag">台 🆚 韓</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">11:00</div>
+            <div class="event">到達東京巨蛋</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">12:00</div>
+            <div class="event"><b>WBC 比賽開始</b></div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">16:00</div>
+            <div class="event"><b>晚餐時間</b> (慶功宴)</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">18:30</div>
+            <div class="event"><b>包車回羽田機場</b> ➔ 入住飯店</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">20:00</div>
+            <div class="event highlight">♨️ 頂樓「泉天空之湯」溫泉</div>
+        </div>
+    </div>
+
+    <div class="day-card">
+        <div class="day-header">
+            <div class="day-title">3/9 (一) 歸途</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">06:00</div>
+            <div class="event">羽田第三航廈 華航報到</div>
+        </div>
+        <div class="schedule-item">
+            <div class="time">07:55</div>
+            <div class="event">起飛回台灣 (CI223)</div>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        💡 記得帶護照正本進行退稅<br>
+        📱 確保 Suica 已在 Apple Wallet 儲值好<br>
+        🇹🇼 台灣隊全勝！加油！
+    </div>
+</div>
+
+</body>
+</html>
